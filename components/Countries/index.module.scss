@@ -1,0 +1,14 @@
+.Countries {
+  --spacing: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  margin: 0 calc(var(--spacing) * -1);
+
+  > * {
+    flex: 1 0 calc(25% - (var(--spacing) * 2));
+    min-width: 200px;
+    margin: var(--spacing);
+    content-visibility: auto;
+  }
+}
