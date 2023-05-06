@@ -1,0 +1,20 @@
+.HomePage {
+  &__ActionBar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 40px 0 0;
+    @media screen and (max-width: 700px) {
+      & {
+        flex-direction: column;
+      }
+      & > :first-child {
+        width: 100%;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+.Loading {
+  margin-top: 40px;
+}
