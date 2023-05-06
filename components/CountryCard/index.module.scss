@@ -1,0 +1,35 @@
+.CountryCard {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius);
+  background-color: var(--primary-color);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  &__Title {
+    white-space: nowrap;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  &__Content {
+    padding: 5px 30px 40px;
+  }
+  &__Fields {
+    > * {
+      margin: 5px 0;
+    }
+  }
+  &__Img {
+    width: 100%;
+    aspect-ratio: 4/2;
+    object-fit: cover;
+  }
+  &__Field {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    > :first-child {
+      font-weight: 600;
+    }
+  }
+}
