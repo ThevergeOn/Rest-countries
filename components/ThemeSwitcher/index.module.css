@@ -1,0 +1,8 @@
+.ThemeSwitcher {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.ThemeSwitcher span {
+  margin-left: 10px;
+}
