@@ -1,0 +1,46 @@
+/* Nunito Sans Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+:root {
+  /* Colors */
+  --dark-blue: hsl(209, 23%, 22%);
+  --very-dark-blue: hsl(207, 26%, 17%);
+  --very-dark-blue-text: hsl(200, 15%, 8%);
+  --dark-gray: hsl(0, 0%, 52%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Typography */
+  --body-copy-items: 14px;
+  --body-copy-detail: 16px;
+
+  /* Brand Colors */
+  --primary-color: var(--white);
+  --secondary-color: var(--very-light-gray);
+  --text-color: #000;
+  --gray: var(--dark-gray);
+
+  /* Layout */
+  --desktop-width: 1440px;
+  --mobile-width: 370px;
+  --layout-padding: 70px;
+  --radius: 8px;
+
+  /* Animation */
+  --theme-transition-time: 150ms;
+
+  /* Shadows */
+  --shadow: 0 0 8px #ccc;
+}
+
+:root[data-theme="dark"] {
+  --primary-color: var(--dark-blue);
+  --secondary-color: var(--very-dark-blue);
+  --text-color: var(--white);
+  --gray: var(--very-light-gray);
+  --shadow: 0 0 5px hsl(200, 15%, 8%);
+}
+* {
+  color: var(--text-color);
+  transition: background-color var(--theme-transition-time), color;
+}

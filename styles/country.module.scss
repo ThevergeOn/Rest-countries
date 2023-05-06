@@ -1,0 +1,92 @@
+.CountryPage {
+  font-size: var(--body-copy-detail);
+  &__Img {
+    width: 40%;
+  }
+
+  &__ActionBar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 60px 0;
+  }
+
+  &__Content {
+    display: flex;
+  }
+  &__Info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 80px 40px;
+  }
+  &__Sections {
+    display: flex;
+    margin: 20px 0 40px;
+    > * {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+
+      //   Fields
+      > * {
+        margin: 5px 0;
+      }
+    }
+  }
+  &__Heading {
+    margin: 0;
+  }
+  &__ButtonText {
+    margin-left: 10px;
+  }
+  &__Borders {
+    display: flex;
+    flex-wrap: wrap;
+    > * {
+      margin-right: 10px;
+      margin-bottom: 10px;
+      padding: 5px 20px;
+      background-color: var(--primary-color);
+      box-shadow: var(--shadow);
+    }
+  }
+  &__Footer {
+    display: flex;
+
+    > p {
+      margin: 0;
+      margin-right: 10px;
+      margin-top: 5px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    &__Img {
+      width: 100%;
+    }
+    &__Content {
+      flex-direction: column;
+    }
+    &__Info {
+      padding-left: 0;
+    }
+    &__Sections {
+      flex-direction: column;
+      margin: 0;
+      > * {
+        margin: 20px 0;
+      }
+    }
+    &__Footer {
+      flex-direction: column;
+      align-items: initial;
+      margin-top: 10px;
+    }
+    &__Borders {
+      margin-top: 20px;
+    }
+  }
+}
